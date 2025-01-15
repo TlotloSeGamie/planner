@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import FetchWeather from "./FetchWeather"; // Assuming FetchWeather is in the same directory
+import FetchWeather from "./FetchWeather"; 
 
 const Home = () => {
   const [location, setLocation] = useState({ lat: null, lon: null });

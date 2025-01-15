@@ -59,7 +59,7 @@
 }
 
 .navbar-main-container.scrolled {
-    background-color: rgb(255, 255, 255); /* Change color on scroll */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
