@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollHeight = document.documentElement.scrollHeight;
+            const viewportHeight = window.innerHeight;
+            const scrollThreshold = (scrollHeight - viewportHeight) * 0.2; 
+            
+            if (window.scrollY > scrollThreshold) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    
+
     return (
-        <div className='navbar-main-container'>
+        <div className={`navbar-main-container ${scrolled ? 'scrolled' : ''}`}>
             <div className='navbar-container'>
                 <div className='logo'>
                     Weather Trip Planner
