@@ -1,0 +1,52 @@
+.home-main-container {
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  .home-container {
+    display: flex;
+    width: 98%;
+    justify-content: space-around;
+    gap: 30px;
+    height: 40vh;
+  }
+  
+  .today-weather {
+    width: 98%;
+    grid-area: today;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .maps {
+    width: 98%;
+    grid-area: maps;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
